@@ -13,4 +13,4 @@ module.exports = user => {
   const sig = keygrip.sign('session=' + session)
 
   return { session, sig }
-};
+}
