@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-advanced",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yuttasakcom/nodejs-advanced.git",
+  "author": "YoProgrammer <yuttasakcom@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:client": "npm run dev --prefix nuxt",
+    "dev:server": "nodemon src/server.js",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.2"
+  }
+}
